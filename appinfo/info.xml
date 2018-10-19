@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<info>
+	<id>files_textviewer</id>
+	<category>tools</category>
+	<name>Text File Viewer</name>
+	<description>Allows text files to be displayed in the browser rather than downloaded.</description>
+	<summary>Easy web access to plain text files.</summary>
+	<licence>AGPL</licence>
+	<author>Robert Chapin</author>
+	<namespace>RobsFileViewer</namespace>
+	<version>0.1</version>
+	<dependencies>
+		<owncloud min-version="10.0" max-version="10.0" />
+	</dependencies>
+	<documentation>
+	</documentation>
+	<website>https://www.miqrogroove.com/</website>
+	<repository></repository>
+	<bugs></bugs>
+</info>
