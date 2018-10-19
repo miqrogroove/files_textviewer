@@ -1,5 +1,9 @@
 <?php
 
+namespace OCA\RobsFileViewer\AppInfo;
+
+use OCP\Util;
+
 \OC::$server->getNavigationManager()->add(function () {
 	$urlGenerator = \OC::$server->getURLGenerator();
 	return [
@@ -21,3 +25,10 @@
 		'name' => 'Text',
 	];
 });
+
+\OC::$server->getEventDispatcher()->addListener(
+    'OCA\Files::loadAdditionalScripts',
+    function() {
+        Util::addScript('files_textviewer', 'menu');
+    }
+);

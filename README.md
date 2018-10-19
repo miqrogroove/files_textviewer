@@ -15,6 +15,4 @@ Security may be improved if this helps you avoid saving files to a public or mob
 1. Find the Text File Viewer tile and click "Enable".
 
 ## Limitations
-There is not yet any context-sensitive way to switch to this view from a specific file in the built-in Files app.
-
 Each file is assumed to be either UTF-8 or Windows-1252 encoded.  This will not work with other types of text files.
