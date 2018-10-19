@@ -1,5 +1,9 @@
-# ownCloud Text File Viewer
-Website App providing lightweight file browsing and text file display.
+# Text File Viewer
+This website App for ownCloud provides lightweight file browsing and text file display.
+
+A text-only interface can be much faster than scrolling an infinite river of files or downloading a text file into a separate app just to see it.
+
+Security may be improved if this helps you avoid saving files to a public or mobile device.
 
 ## Installation
 1. The file path must be `/var/www/owncloud/apps/files_textviewer/` or equivalent.  The name of the leaf directory should not be changed.
@@ -10,5 +14,7 @@ Website App providing lightweight file browsing and text file display.
 1. Click "Show disabled apps".
 1. Find the Text File Viewer tile and click "Enable".
 
-## Unsigned Versions
-Text File Viewer v0.1 is an unsigned beta version and will cause this message to appear to the administrators: "There were problems with the code integrity check."
+## Limitations
+There is not yet any context-sensitive way to switch to this view from a specific file in the built-in Files app.
+
+Each file is assumed to be either UTF-8 or Windows-1252 encoded.  This will not work with other types of text files.

@@ -8,13 +8,18 @@
 	<licence>AGPL</licence>
 	<author>Robert Chapin</author>
 	<namespace>RobsFileViewer</namespace>
-	<version>0.1</version>
+	<version>0.2</version>
 	<dependencies>
 		<owncloud min-version="10.0" max-version="10.0" />
+		<php min-version="5.4" />
+		<!-- database not required -->
+		<!-- command not required -->
+		<!-- lib not required -->
+		<!-- os not required -->
 	</dependencies>
 	<documentation>
 	</documentation>
 	<website>https://www.miqrogroove.com/</website>
-	<repository></repository>
-	<bugs></bugs>
+	<repository type="git">https://github.com/miqrogroove/files_textviewer</repository>
+	<bugs>https://github.com/miqrogroove/files_textviewer/issues</bugs>
 </info>
