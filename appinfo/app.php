@@ -18,7 +18,7 @@ use OCP\Util;
 		'href' => $urlGenerator->linkToRoute('files_textviewer.view.fetch', array('path' => '')),
 
 		// The icon that will be shown in the navigation, located in img/
-		// Icon made by Freepik from www.flaticon.com 
+		// Icon made by Freepik from www.flaticon.com
 		'icon' => $urlGenerator->imagePath('files_textviewer', 'txt2.svg'),
 
 		// The application's title, used in the navigation & the settings page of your app
@@ -27,8 +27,8 @@ use OCP\Util;
 });
 
 \OC::$server->getEventDispatcher()->addListener(
-    'OCA\Files::loadAdditionalScripts',
-    function() {
-        Util::addScript('files_textviewer', 'menu');
-    }
+	'OCA\Files::loadAdditionalScripts',
+	function() {
+		Util::addScript('files_textviewer', 'menu');
+	}
 );

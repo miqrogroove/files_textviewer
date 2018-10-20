@@ -34,8 +34,8 @@ function textviewerHooks() {
 }
 
 $(document).ready(function () {
-    if (typeof OCA !== 'undefined' && typeof OCA.Files !== 'undefined' && typeof OCA.Files.fileActions !== 'undefined') {
-        textviewerHooks();
-    }
-    return true;
+	if (typeof OCA !== 'undefined' && typeof OCA.Files !== 'undefined' && typeof OCA.Files.fileActions !== 'undefined') {
+		textviewerHooks();
+	}
+	return true;
 });

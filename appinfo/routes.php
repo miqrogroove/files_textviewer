@@ -31,8 +31,6 @@ $application->registerRoutes(
 				'verb' => 'GET',
 				'requirements' => ['path' => '.*']
 			],
-
 		]
 	]
 );
-
