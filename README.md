@@ -8,6 +8,7 @@ Security may be improved if this helps you avoid saving files to a public or mob
 ## Installation
 1. The file path must be `/var/www/owncloud/apps/files_textviewer/` or equivalent.  The name of the leaf directory should not be changed.
 1. Copy or checkout all of the files to the correct path.
+1. Verify correct ownership and permissions for the files_textviewer directory.
 1. Log in to ownCloud as an administrator.
 1. In your user menu, click "Settings".
 1. Click "Apps".
