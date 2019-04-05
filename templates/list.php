@@ -7,6 +7,12 @@
  </head>
  <body>
 <?php
+if ( ! $_['root'] ) {
+?>
+  <p><a href="../">Parent Directory</p>
+<?php
+}
+
 foreach ( $_['files'] as $file ) {
 	$name = $file->getName();
 	if ($file->getType() === \OCP\Files\FileInfo::TYPE_FOLDER) {
@@ -14,6 +20,8 @@ foreach ( $_['files'] as $file ) {
 	}
 ?>
   <p><a href="<?php p($name); ?>"><?php p($name); ?></a></p>
-<?php } ?>
+<?php
+}
+?>
  </body>
 </html>

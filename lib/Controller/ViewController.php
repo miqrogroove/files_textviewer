@@ -20,7 +20,8 @@ class ViewController extends Controller {
 			return new NotFoundResponse();
 		}
 		$parameters = array();
-		if ( '/' === $path ) {
+		$parameters['root'] = '/' === $path;
+		if ( $parameters['root'] ) {
 			$parameters['title'] = 'Text File Viewer';
 		} else {
 			$parameters['title'] = pathinfo( $path, PATHINFO_BASENAME );
