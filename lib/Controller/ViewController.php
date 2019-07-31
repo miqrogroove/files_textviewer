@@ -44,6 +44,9 @@ class ViewController extends Controller {
 			$dirInfo = \OC\Files\Filesystem::getFileInfo($path);
 			$files = \OCA\Files\Helper::getFiles($path, 'name', false);
 			$parameters['files'] = $files;
+			$parameters['path']  = $path;
+			$urlGenerator = \OC::$server->getURLGenerator();
+			$parameters['webdav'] = $urlGenerator->linkTo('', 'remote.php');
 		} else {
 			return new NotFoundResponse();
 		}
